@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SUVRAT GLOBAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚙️</span>
+                <span>SUVRAT GLOBAL</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <h1>Our Blog</h1>
+        <p>Insights, Tips, and Industry Updates</p>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="blog-search">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search articles..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="blog-categories">
+                <button class="category-btn active" onclick="filterBlog('all')">All</button>
+                <button class="category-btn" onclick="filterBlog('technology')">Technology</button>
+                <button class="category-btn" onclick="filterBlog('infrastructure')">Infrastructure</button>
+                <button class="category-btn" onclick="filterBlog('business')">Business</button>
+                <button class="category-btn" onclick="filterBlog('tips')">Tips & Tricks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+                <!-- Technology Articles -->
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">💻</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Technology</span>
+                        <h3>The Future of Cloud Computing in 2024</h3>
+                        <p>Explore the emerging trends in cloud technology, from serverless computing to AI integration and edge computing solutions.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">🔐</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Technology</span>
+                        <h3>Cybersecurity Best Practices for 2024</h3>
+                        <p>Essential security measures and protocols to protect your business from evolving cyber threats and data breaches.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 10, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">📱</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Technology</span>
+                        <h3>Building Responsive Mobile Applications</h3>
+                        <p>Learn the key principles and frameworks for developing mobile apps that work seamlessly across all devices.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 5, 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Infrastructure Articles -->
+                <article class="blog-card" data-category="infrastructure">
+                    <div class="blog-image">🛣️</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Infrastructure</span>
+                        <h3>Modern Road Construction Techniques</h3>
+                        <p>Discover the latest methods and technologies revolutionizing road construction and infrastructure development.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 12, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="infrastructure">
+                    <div class="blog-image">🏗️</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Infrastructure</span>
+                        <h3>Sustainable Infrastructure Development</h3>
+                        <p>Explore eco-friendly approaches to infrastructure projects that minimize environmental impact while ensuring durability.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 8, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="infrastructure">
+                    <div class="blog-image">📐</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Infrastructure</span>
+                        <h3>Quality Assurance in Construction</h3>
+                        <p>Learn how rigorous quality control processes ensure structural integrity and safety in every construction project.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 1, 2024</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Business Articles -->
+                <article class="blog-card" data-category="business">
+                    <div class="blog-image">💼</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Business</span>
+                        <h3>Digital Transformation for Small Businesses</h3>
+                        <p>A comprehensive guide to implementing digital solutions that drive growth and improve operational efficiency.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 28, 2024</span>
+                            <span class="blog-read-time">8 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="business">
+                    <div class="blog-image">📊</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Business</span>
+                        <h3>ROI Analysis: Investing in IT Solutions</h3>
+                        <p>Understand how to measure the return on investment from technology initiatives and strategic project investments.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 25, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="business">
+                    <div class="blog-image">🤝</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Business</span>
+                        <h3>Building Long-Term Client Partnerships</h3>
+                        <p>Strategies for developing strong, trust-based relationships that lead to sustainable business growth.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 20, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Tips & Tricks Articles -->
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-image">💡</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Tips & Tricks</span>
+                        <h3>5 Ways to Improve Your Document Management</h3>
+                        <p>Practical tips for organizing, storing, and managing documents efficiently in your organization.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 18, 2024</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-image">🎨</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Tips & Tricks</span>
+                        <h3>Design Tips for Professional Printing</h3>
+                        <p>Essential guidelines for preparing artwork and documents to ensure maximum print quality and visual impact.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 15, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-image">⚙️</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Tips & Tricks</span>
+                        <h3>System Maintenance: A Complete Checklist</h3>
+                        <p>Everything you need to know about maintaining your IT systems for optimal performance and reliability.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 12, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Additional Articles -->
+                <article class="blog-card" data-category="technology">
+                    <div class="blog-image">🚀</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Technology</span>
+                        <h3>AI Integration in Business Processes</h3>
+                        <p>How artificial intelligence is transforming industries and creating new opportunities for automation and optimization.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 10, 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="infrastructure">
+                    <div class="blog-image">♻️</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Infrastructure</span>
+                        <h3>Green Infrastructure: Building Sustainable Roads</h3>
+                        <p>Innovative techniques for incorporating environmental considerations into large-scale infrastructure projects.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 8, 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="business">
+                    <div class="blog-image">📈</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Business</span>
+                        <h3>Scaling Your Business with Technology</h3>
+                        <p>Strategic approaches to using technology as a lever for business growth and market expansion.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 5, 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No articles found. Try a different search or filter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest insights and updates</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input">
+                <button class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>SUVRAT GLOBAL</h4>
+                    <p>Delivering excellence in IT Services, Road Construction, and Print Solutions.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">IT Services</a></li>
+                        <li><a href="services.html">Road Construction</a></li>
+                        <li><a href="services.html">Print & Scanning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SUVRAT GLOBAL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
