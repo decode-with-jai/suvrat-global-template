@@ -275,6 +275,5 @@ Thank you for using this professional website template. We hope it helps SUVRAT 
 
 ---
 
-**Version**: 1.0
 **Last Updated**: May 2024
-**Created by**: Claude AI
+**Created by**: JAI JAIN
