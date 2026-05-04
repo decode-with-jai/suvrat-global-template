@@ -275,5 +275,5 @@ Thank you for using this professional website template. We hope it helps SUVRAT 
 
 ---
 
-**Last Updated**: May 2024
+**Last Updated**: May 2026
 **Created by**: JAI JAIN
